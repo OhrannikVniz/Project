@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Order</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="topmenu">
+        <li><a href="index.html">Головна</a></li>
+        <li>
+          <a class="down">Послуги</a>
+          <ul class="submenu">
+            <li><a href="print.html">3D друк</a></li>
+            <li><a href="modeling.html">3D моделювання</a></li>
+          </ul>
+        </li>
+
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </ul>
+      <img src="img/logo.png" alt="Логотип" />
+    </nav>
+    <header>
+      <h1>Контактні дані</h1>
+      <p>
+        Ми зв'яжемось з вами для розрахунку вартості, сроку виконання замовлення
+        та додаткових даних у разі необхідності
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://formspree.io/xayqpeoz">
+        <label
+          >Ім'я:
+          <input type="text" required name="Ім'я" /> </label
+        ><br />
+        <label
+          >Телефон або E-mail:
+          <input type="text" required name="Телефон або E-mail" /> </label
+        ><br />
+        Оберіть послугу:
+        <select size="2" multiple required name="Послуга">
+          <option value="3D друк">3D друк</option>
+          <option value="3D моделювання">3D моделювання</option>
+        </select>
+        <br />
+        Додайте файли<em>(для 3D друку формату .STL або .WRL)</em><br />
+        <input type="file" multiple required name="Файли" /><br />
+        <input type="submit" value="Надіслати" />
+      </form>
+    </main>
+    <address>
+      <p>
+        +38 032 118 76 47<br />
+        +38 044 221 88 88<br />
+        <a href="foxprint@gmail.com">foxprint@gmail.com</a><br />
+        м.Львів, вул. Випасова 11Б
+      </p>
+    </address>
+    <footer>
+      <p>Графік роботи:<br />пн-пт з 9:00 до 18:00</p>
+      <br />
+      <p>Всі права захищені «Foxprint» Copyright © 2020</p>
+    </footer>
+  </body>
+</html>
