@@ -5,86 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/print.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <title>3Dprint</title>
   </head>
   <body>
-    <nav>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li><a class="menu__item" href="index.html">Головна</a></li>
-          <li><a class="menu__item" href="print.html">3D друк</a></li>
-          <li><a class="menu__item" href="modeling.html">3D моделювання</a></li>
-          <li><a class="menu__item" href="gallery.html">Галерея</a></li>
-          <li><a class="menu__item" href="contacts.html">Контакти</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Головна <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="print.html">3D друк</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modeling.html">3D моделювання</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Галерея</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакти</a>
+          </li>
         </ul>
       </div>
-      <img src="img/logo.png" alt="Логотип" class="logotype" />
     </nav>
+    <div class="logoclock">
+      <img src="img/logo.png" alt="Логотип" class="logotype" />
+      <div class="clock"></div>
+    </div>
     <header>
       <h1>3D друк</h1>
     </header>
     <main>
-      <h2>Стандартний FDM друк:</h2>
-      <img src="img/fdm.jpg" alt="FDM друк" class="fdmpic" />
-      <div class="secondmethod">
-        <h3>Метод пошарового наплавлення</h3>
-        <p>
-          Технологія дозволяє створювати вироби з широкого спектру матеріалів з
-          різними характеристиками і властивостями.
-        </p>
-        <p>Висота шару:</p>
-        <ul class="listnone">
-          <li>0,1-0,3 мм. (100-300 мікрон)</li>
-        </ul>
-        <p>Область друку:</p>
-        <ul class="listnone">
-          <li>до 600х600х600 мм</li>
-        </ul>
-        <img
-          src="img/down.png"
-          alt="Випадаюча таблиця з матеріалами і цінами"
-          class="dropbutton"
-        />
-        <table class="droptable">
-          <tr>
-            <td><strong>Матеріал/Висота шару</strong></td>
-            <td><strong>Стандартна якість 300 мікрон</strong></td>
-            <td><strong>Оптимальна якість 200 мікрон</strong></td>
-            <td><strong>Висока якість 100 мікрон</strong></td>
-          </tr>
-          <tr>
-            <td><strong>Стандартні (ABS, PLA)</strong></td>
-            <td>4,1 грн/грам</td>
-            <td>5,9 грн/грам</td>
-            <td>11,3 грн/грам</td>
-          </tr>
-          <tr>
-            <td><strong>Високоточні та ударостійкі</strong></td>
-            <td>від 4,5 грн/грам</td>
-            <td>від 6,3 грн/грам</td>
-            <td>від 11,7 грн/грам</td>
-          </tr>
-          <tr>
-            <td><strong>Гнучкі та резиноподібні</strong></td>
-            <td>від 5,4 грн/грам</td>
-            <td>від 7,2 грн/грам</td>
-            <td>від 12,6 грн/грам</td>
-          </tr>
-          <tr>
-            <td><strong>Декоративні і спеціальні</strong></td>
-            <td>від 5,1 грн/грам</td>
-            <td>від 6,9 грн/грам</td>
-            <td>від 12,3 грн/грам</td>
-          </tr>
-        </table>
+      <div class="desktopflex">
+        <div class="fdm">
+          <h3>Стандартний FDM друк:</h3>
+          <p class="fdmp">
+            Одна за найпоширеніших і простіших технологій 3D друку. <br />
+            Саме вона є найбільш бюджетною і доступною у всіх планах.<br />
+            FDM друк вельми успішний, але незрівнянний з друком на
+            спеціалізованному обладнанні.<br />
+            Переваги FDM:
+          </p>
+          <ul class="fdmul">
+            <li>Доступність</li>
+            <li>Великий вибір матерівлів</li>
+            <li>Співвідношення ціна/якість</li>
+          </ul>
+
+          <img src="img/fdm.jpg" alt="FDM друк" class="fdmpic" />
+        </div>
+        <div class="secondmethod">
+          <h3>Метод пошарового наплавлення:</h3>
+          <p>
+            Технологія дозволяє створювати вироби з широкого спектру матеріалів
+            з різними характеристиками і властивостями.
+          </p>
+          <p>Висота шару:</p>
+          <ul class="listnone">
+            <li>0,1-0,3 мм. (100-300 мікрон)</li>
+          </ul>
+          <p>Область друку:</p>
+          <ul class="listnone">
+            <li>до 600х600х600 мм</li>
+          </ul>
+          <img
+            src="img/down.png"
+            alt="Випадаюча таблиця з матеріалами і цінами"
+            class="dropbutton"
+          />
+          <table class="droptable">
+            <tr>
+              <td><strong>Матеріал/Висота шару</strong></td>
+              <td><strong>Стандартна якість 300 мікрон</strong></td>
+              <td><strong>Оптимальна якість 200 мікрон</strong></td>
+              <td><strong>Висока якість 100 мікрон</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Стандартні (ABS, PLA)</strong></td>
+              <td>4,1 грн/грам</td>
+              <td>5,9 грн/грам</td>
+              <td>11,3 грн/грам</td>
+            </tr>
+            <tr>
+              <td><strong>Високоточні та ударостійкі</strong></td>
+              <td>від 4,5 грн/грам</td>
+              <td>від 6,3 грн/грам</td>
+              <td>від 11,7 грн/грам</td>
+            </tr>
+            <tr>
+              <td><strong>Гнучкі та резиноподібні</strong></td>
+              <td>від 5,4 грн/грам</td>
+              <td>від 7,2 грн/грам</td>
+              <td>від 12,6 грн/грам</td>
+            </tr>
+            <tr>
+              <td><strong>Декоративні і спеціальні</strong></td>
+              <td>від 5,1 грн/грам</td>
+              <td>від 6,9 грн/грам</td>
+              <td>від 12,3 грн/грам</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <h4>Високоточний SLA i DLP друк</h4>
-      <img src="img/sla.png" alt="SLA друк" class="slapic" />
-      <h5>Надточний метод створення виробу</h5>
+      <div class="sla">
+        <h3>Високоточний SLA i DLP друк:</h3>
+        <img src="img/sla.png" alt="SLA друк" class="slapic" />
+      </div>
+
+      <h3>Надточний метод створення виробу:</h3>
       <div class="forthmethod">
         <p>
           Надточний метод створення виробу шляхом затрердіння фотополімерної
@@ -132,55 +180,54 @@
         </table>
       </div>
     </main>
-    <aside>
-      <section class="important">
-        <h6>
-          <strong>Важливо знати перед замовленням друку на 3D принтері!</strong>
-        </h6>
-        <p><strong>Процент внутрішнього заповнення:</strong></p>
-        <p><em>Впливає на міцність і вагу виробу</em></p>
-        <p>
-          Всередині виробу принтер друкує решітку жорсткості, яка розподіляє
-          нагрузку на виріб. Заповнення може варіюватися від 0% до 100% в
-          залежності від ваших побажань та умов експлуатації. Часткове
-          заповнення допомагає добитись многократної економії коштів та часу на
-          виготовлення.
-        </p>
-        <br />
-        <p><strong>Підтримка навісних елементів:</strong></p>
-        <p>
-          <em>Підтримка необхідна для створення навісних елементів моделі</em>
-        </p>
-        <p>
-          Оскільки 3D принтер друкує пошарово, в процесі друку кожен новий слой
-          лягає на попередній. Якщо у вашої моделі є навісні елементи (котрі не
-          мають під собою опори), на етапі підготовки ми вистроїмо опору, яку
-          створить принтер. На елементах, під які вистроювались опори, можуть
-          залишитись невеликі залишки пластику.
-        </p>
-        <br />
-        <p><strong>Товщина стінки:</strong></p>
-        <p>
-          <em
-            >Товщина стінки, як і внутрішнє заповнення, впливає на міцність і
-            вагу виробу.</em
-          >
-        </p>
-        <p>
-          При частковому внутрішньому заповненні моделі ми можемо підвищити
-          міцність виробу за рахунок збільшення товщини стінки. Для виставкових
-          макетів, прототипів, елементів декору і виробів, на які не впливають
-          зовнішні фактори зазвичай використовується товщина стінки 0,8мм. Для
-          виробів, які знаходитимуться під дією фізичних нагрузок,
-          рекомендується товщина стінки 1,2мм і більше.
-        </p>
-      </section>
-      <div class="btn">
-        <form method="GET" action="order.html">
-          <button type="submit" class="orderbutton">Замовити 3D друк</button>
-        </form>
-      </div>
-    </aside>
+
+    <section class="important">
+      <h4>
+        <strong>Важливо знати перед замовленням друку на 3D принтері!</strong>
+      </h4>
+      <p><strong>Процент внутрішнього заповнення:</strong></p>
+      <p><em>Впливає на міцність і вагу виробу</em></p>
+      <p>
+        Всередині виробу принтер друкує решітку жорсткості, яка розподіляє
+        нагрузку на виріб. Заповнення може варіюватися від 0% до 100% в
+        залежності від ваших побажань та умов експлуатації. Часткове заповнення
+        допомагає добитись многократної економії коштів та часу на виготовлення.
+      </p>
+      <br />
+      <p><strong>Підтримка навісних елементів:</strong></p>
+      <p>
+        <em>Підтримка необхідна для створення навісних елементів моделі</em>
+      </p>
+      <p>
+        Оскільки 3D принтер друкує пошарово, в процесі друку кожен новий шар
+        лягає на попередній. Якщо у вашої моделі є навісні елементи (котрі не
+        мають під собою опори), на етапі підготовки ми вистроїмо опору, яку
+        створить принтер. На елементах, під які вистроювались опори, можуть
+        залишитись невеликі залишки пластику.
+      </p>
+      <br />
+      <p><strong>Товщина стінки:</strong></p>
+      <p>
+        <em
+          >Товщина стінки, як і внутрішнє заповнення, впливає на міцність і вагу
+          виробу.</em
+        >
+      </p>
+      <p>
+        При частковому внутрішньому заповненні моделі ми можемо підвищити
+        міцність виробу за рахунок збільшення товщини стінки. Для виставкових
+        макетів, прототипів, елементів декору і виробів, на які не впливають
+        зовнішні фактори зазвичай використовується товщина стінки 0,8мм. Для
+        виробів, які знаходитимуться під дією фізичних нагрузок, рекомендується
+        товщина стінки 1,2мм і більше.
+      </p>
+    </section>
+    <div class="orderbtn">
+      <form method="GET" action="order.html">
+        <button type="submit" class="orderbutton">Замовити 3D друк</button>
+      </form>
+    </div>
+
     <footer>
       <address>
         <p>
@@ -199,6 +246,22 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/print.js"></script>
   </body>
 </html>
