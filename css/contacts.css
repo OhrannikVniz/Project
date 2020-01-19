@@ -15,7 +15,6 @@
     right: 7px;
     top: 1px;
   }
-
   .clock {
     display: flex;
     font-family: "Francois One", sans-serif;
@@ -40,27 +39,32 @@
     font-size: 80px;
   }
 
-  .row{
-      margin: 2rem;
-      font-family: "Francois One", sans-serif;
-      font-size: 16px;
-      text-align: center;
+  .flexcontent {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Francois One", sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  .workingh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-    footer {
+  footer {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: "Francois One", sans-serif;
     font-size: 12px;
+    margin: 2rem;
   }
 }
-
 @media (max-width: 990px) {
-    body {
+  body {
     margin: auto;
   }
-
   .logotype {
     height: 80px;
     display: flex;
@@ -71,6 +75,7 @@
     right: 20px;
     top: 7px;
   }
+
   .clock {
     display: flex;
     font-family: "Francois One", sans-serif;
@@ -87,17 +92,21 @@
     font-size: 20px;
     height: 100px;
   }
+
   header h1 {
     font-family: "Righteous", cursive;
     text-align: center;
     margin: 1rem;
     font-size: 50px;
   }
-  .row{
-      margin: 2rem;
-      font-family: "Francois One", sans-serif;
-      font-size: 16px;
-      text-align: center;
+
+  .flexcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Francois One", sans-serif;
+    font-size: 20px;
+    text-align: center;
   }
 
   footer {
